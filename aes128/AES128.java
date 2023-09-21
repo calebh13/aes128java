@@ -28,10 +28,15 @@ public class AES128
         // Put -1 into the prompt to get the results that match up with Appendix B on NIST site, linked above.
         boolean verboseMode = false;
         System.out.print("Enter 0 to encrypt, or 1 to decrypt: ");
-        int x = s.nextInt();
+        int option = 0;
+        if(s.hasNextInt()) 
+        {
+            option = s.nextInt();
+        }
         s.nextLine();
-        switch(x) 
-	{
+        
+        switch(option) 
+        {
             case 1:
                 // Note: all valid UTF-8 characters work!
                 System.out.print("Enter encrypted text: ");

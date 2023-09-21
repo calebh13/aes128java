@@ -31,7 +31,7 @@ public class AES128 {
         int x = s.nextInt();
         s.nextLine();
         switch(x) 
-				{
+	{
             case 1:
                 // Note: all valid UTF-8 characters work!
                 System.out.print("Enter encrypted text: ");

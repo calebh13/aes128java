@@ -21,8 +21,8 @@ import java.util.Scanner;
 public class AES128 {
 
     public static void main(String[] args) 
-		{
-				Scanner s = new Scanner(System.in);
+    {
+	Scanner s = new Scanner(System.in);
         String pass, enc;
         // Set verboseMode to true to print every step of encryption.
         // Put -1 into the prompt to get the results that match up with Appendix B on NIST site, linked above.

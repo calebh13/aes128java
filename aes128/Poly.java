@@ -88,7 +88,7 @@ public abstract class Poly
             return 0; // 0 * 0 = 0
         }
         int prod = b; // this is the bitmasked single bit
-        // not that numOfTimes is a power of two, so the binary log is effectively implemented here with i *= 2
+        // note that numOfTimes is a power of two, so the binary log is effectively implemented here with i *= 2
         for(int i = 1; i < numOfTimes; i *= 2) 
         {
             prod = prod << 1; // left bitshift
